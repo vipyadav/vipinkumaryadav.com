@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Uses_of_Yield_Keyword
 {
@@ -12,13 +9,13 @@ namespace Uses_of_Yield_Keyword
                                            {
                                                "WagonR", "Celerio", "Alto K10"
                                            };
+
         List<string> HyundaiCars = new List<string>
                                            {
                                                "EON", "i10", "i20", "Verna"
                                            };
         public void Merge()
         {
-
             var allModels = AllCarModelsEfficientMerge(MarutiCars, HyundaiCars);
 
             foreach (var model in allModels)
@@ -26,7 +23,6 @@ namespace Uses_of_Yield_Keyword
                 Console.WriteLine(model);
             }
         }
-
 
         static IEnumerable<string> AllCarModelsEfficientMerge(List<string> marutiCars, List<string> hyundaiCars)
         {
